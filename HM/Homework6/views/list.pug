@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    h1 Total number of works is #{items.length}
+    each item in items
+      p #{item.title}
+    pre #{JSON.stringify(items, null, 4)}
